@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import redirect
 
 
@@ -8,6 +9,9 @@ class AccessGuardMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
+        if not getattr(settings, 'ENABLE_ACCESS_GUARD', True):
+            return self.get_response(request)
+
         path = request.path
         allowed = (
             path.startswith('/static/')

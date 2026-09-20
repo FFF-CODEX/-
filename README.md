@@ -41,6 +41,10 @@ npm run build
 
 Django 会从 `frontend/dist/index.html` 提供前端页面，静态资源统一使用 `/static/` 路径。
 
+## 生产部署
+
+Docker、PostgreSQL、Nginx 和 Cloudflare Tunnel 的部署步骤见 [DEPLOY.md](DEPLOY.md)。
+
 ## 环境变量
 
 生产环境至少需要配置：
