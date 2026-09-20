@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="badgeTitle badgeDesc">
+  <title id="badgeTitle">微筑工坊标识</title>
+  <desc id="badgeDesc">微筑工坊方形品牌标识</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecd29d"/>
+      <stop offset="0.52" stop-color="#bd9357"/>
+      <stop offset="1" stop-color="#855f34"/>
+    </linearGradient>
+    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.07"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="10" y="10" width="108" height="108" stroke="url(#gold)" stroke-width="2.6"/>
+    <rect x="18" y="18" width="92" height="92" stroke="url(#gold)" stroke-width="1.4" opacity="0.55"/>
+    <path d="M26 62 L64 30 L102 62" stroke="url(#gold)" stroke-width="3.4"/>
+    <path d="M33 62 V92 H95 V62" stroke="url(#gold)" stroke-width="2"/>
+    <path d="M49 70 V92 H63 V70" stroke="url(#gold)" stroke-width="1.6"/>
+    <path d="M22 97 H106" stroke="url(#gold)" stroke-width="1.6" opacity="0.8"/>
+    <path d="M88 97 V100 H95 V102" stroke="url(#gold)" stroke-width="1.6"/>
+    <path d="M78 67 H83 V72 H78 Z" fill="url(#gold)" stroke="none"/>
+    <rect x="61.5" y="26.5" width="5" height="5" fill="url(#gold)" stroke="none"/>
+  </g>
+  <rect x="8" y="8" width="112" height="112" fill="#cba66b" filter="url(#grain)" opacity="0.22"/>
+</svg>

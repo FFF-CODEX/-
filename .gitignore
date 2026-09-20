@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+staticfiles/
+media/
+
+# Python 工具
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# 前端
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/public/images/
+
+# 环境变量和密钥
+.env
+.env.*
+!.env.example
+
+# 编辑器和操作系统
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# 日志和临时文件
+*.log
+*.tmp
+.tmp/
+
+# 本地原始照片和预览文件
+照片库/
+logo-preview.html
+
+# GitHub 上传整理目录和压缩包
+github-upload-*/
+github-upload-*.zip

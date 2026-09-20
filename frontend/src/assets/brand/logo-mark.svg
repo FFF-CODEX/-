@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="markTitle markDesc">
+  <title id="markTitle">微筑工坊标识</title>
+  <desc id="markDesc">微筑工坊方形品牌标识</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecd29d"/>
+      <stop offset="0.52" stop-color="#bd9357"/>
+      <stop offset="1" stop-color="#855f34"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.07"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="#14161a"/>
+  <rect width="512" height="512" fill="#bf9458" filter="url(#grain)" opacity="0.34"/>
+  <rect x="36" y="36" width="440" height="440" fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.85"/>
+  <g transform="translate(86, 14) scale(1.7)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="36" y="56" width="128" height="128" stroke="url(#gold)" stroke-width="2.2"/>
+    <rect x="45" y="65" width="110" height="110" stroke="url(#gold)" stroke-width="1.2" opacity="0.5"/>
+    <path d="M65 118 L100 80 L135 118" stroke="url(#gold)" stroke-width="3"/>
+    <path d="M73 118 V158 H127 V118" stroke="url(#gold)" stroke-width="1.8"/>
+    <path d="M92 136 V158 H108 V136" stroke="url(#gold)" stroke-width="1.6"/>
+    <path d="M60 166 H140" stroke="url(#gold)" stroke-width="1.2" opacity="0.75"/>
+    <path d="M131 166 V171 H139 V174" stroke="url(#gold)" stroke-width="1.4"/>
+    <path d="M117.5 126.5 H122.5 V131.5 H117.5 Z" fill="url(#gold)" stroke="none"/>
+    <rect x="97.5" y="76.5" width="5" height="5" fill="url(#gold)" stroke="none"/>
+  </g>
+  <rect x="147" y="109" width="218" height="218" fill="#cba66b" filter="url(#grain)" opacity="0.22"/>
+  <text x="256" y="392" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',serif" font-size="42" font-weight="600" letter-spacing="10" fill="#f3eee5">微筑工坊</text>
+  <rect x="220" y="406" width="72" height="2" fill="url(#gold)"/>
+  <text x="256" y="434" text-anchor="middle" font-family="'Avenir Next','Century Gothic','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="5" fill="#a89d8c">WEIZHU ATELIER</text>
+</svg>
